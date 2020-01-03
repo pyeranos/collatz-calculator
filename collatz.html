@@ -32,7 +32,7 @@
 
   <script>
 
-var global = null; global2=null; global3 = null; global4 = null; global5 = [27,1,0];
+var global = null; global2=null; global3 = null; global4 = null; global5 = [null,1,0];
 
 display = document.getElementsByName('display')[0];
 
@@ -55,7 +55,7 @@ var checkbox = document.querySelectorAll("input[type='checkbox']");
 for(i=0,il=checkbox.length;i<il;i++)
 checkbox[i].addEventListener('change', process);
 
-addEventListener('load', function(e) {searchbar.value = 27;run(searchbar.value);});
+addEventListener('load', function(e) {searchbar.value = null;run(searchbar.value);});
 addEventListener('beforeunload', function(e) {global4.close();});
 
 
