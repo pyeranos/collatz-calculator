@@ -1,4 +1,7 @@
-<!DOCTYPE html><html>
+
+
+<!DOCTYPE html>
+<html>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1">
@@ -171,8 +174,8 @@ while(a%3 != 0)//1
 if((j-1)%3==0)//3
 {j--;
 j=j/3;
-if (j%3 == 0 && j<a) 
-{projectStack.push(j); continue;} 
+if (j%3 == 0 && j<a || j == 1) 
+{if(j!==1)projectStack.push(j); continue;} 
 if(j%3 == 0 && j > a)
 global3 = a;
 a=j;
@@ -213,6 +216,7 @@ myWindow.document.body.appendChild(x);}
 
 
 window.onunload = function (){global4.close();};
+
 
 </script>
 </body>
